@@ -536,6 +536,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.col-start-2{
+  grid-column-start: 2;
+}
+
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -551,6 +555,18 @@ video {
 
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-full{
@@ -578,14 +594,14 @@ video {
   border-color: hsl(231 7% 60% / var(--tw-border-opacity));
 }
 
-.border-red-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
 .bg-Dark-Slate-Grey{
   --tw-bg-opacity: 1;
   background-color: hsl(234 29% 20% / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .from-30\%{
@@ -643,6 +659,11 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-Grey{
+  --tw-text-opacity: 1;
+  color: hsl(231 7% 60% / var(--tw-text-opacity));
+}
+
 .shadow-xl{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -667,11 +688,6 @@ li {
 .placeholder\:text-Grey::placeholder{
   --tw-text-opacity: 1;
   color: hsl(231 7% 60% / var(--tw-text-opacity));
-}
-
-.invalid\:border-red-500:invalid{
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover{
@@ -700,4 +716,63 @@ li {
 .focus\:border-Dark-Slate-Grey:focus{
   --tw-border-opacity: 1;
   border-color: hsl(234 29% 20% / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:col-start-1{
+    grid-column-start: 1;
+  }
+
+  .md\:row-start-1{
+    grid-row-start: 1;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:grid{
+    display: grid;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:max-w-3xl{
+    max-width: 48rem;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
+  }
+
+  .md\:rounded-\[20px\]{
+    border-radius: 20px;
+  }
+
+  .md\:p-2{
+    padding: 0.5rem;
+  }
+
+  .md\:p-4{
+    padding: 1rem;
+  }
+
+  .md\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }

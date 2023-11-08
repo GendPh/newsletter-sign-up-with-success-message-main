@@ -10,6 +10,7 @@ const btnSubmitEmail = document.querySelector("form button");
 
 btnSubmitEmail.addEventListener("click", (e) => {
   e.preventDefault();
+
   if (isValidEmail(emailInput.value)) {
     emailInput.classList.replace("border-red-500", "border-Grey");
     emailInput.classList.replace("text-red-500", "text-Dark-Slate-Grey");
