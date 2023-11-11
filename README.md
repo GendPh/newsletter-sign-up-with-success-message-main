@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile Preview](./public/screenshoots/mobile-preview.jpg)
+! Mobile Preview [Mobile Preview](./public/screenshoots/mobile-preview.jpg)
 ![Tablet Preview](./public/screenshoots/tablet-preview.jpg)
 ![Desktop Preview](./public/screenshoots/desktop-preview.jpg)
 ![Button Hover](./public/screenshoots/btn-2-hover.jpg)
