@@ -1,9 +1,23 @@
+/* npx tailwindcss -i ./src/tailwind/input.css -o ./src/tailwind/output.css --watch */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  input {
+    &.conform {
+      @apply border-Grey text-Grey;
+    }
+    &.not-conform {
+      @apply border-primary text-primary;
+    }
+  }
+  .primary-btn {
+    @apply bg-Dark-Slate-Grey text-lg text-White font-Roboto font-bold w-full rounded-lg p-4 mt-4 hover:bg-gradient-to-r from-30% hover:from-[#c72e59] hover:to-60% hover:to-primary shadow-xl hover:shadow-primary;
+  }
+}
 @layer utilities {
   li {
     padding-left: 15px;

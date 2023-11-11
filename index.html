@@ -4,12 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newsletter Sign-Up Form With Success Message</title>
+  <meta name="description"
+    content="Explore our interactive and user-friendly form project. Submit your information seamlessly with our intuitive design. Enhance your web experience with our responsive and accessible form.">
+  <meta name="keywords" content="form, project, web development, user interface, UX, responsive design">
+  <meta name="author" content="Gabriel Ferreira">
+
+  <title>Newsletter Sign-Up Form</title>
   <link rel="stylesheet" href="./src/tailwind/output.css">
 </head>
 
 <body class="bg-Dark-Slate-Grey md:flex md:items-center md:justify-center min-h-screen md:p-2">
-  <div id="wrapper" class="md:max-w-3xl md:grid md:grid-cols-2 bg-white md:p-4 md:rounded-[20px]">
+  <section id="Newsletter-Form" class="md:max-w-3xl md:grid md:grid-cols-2 bg-white md:p-4 md:rounded-[20px]">
     <header class="col-start-2">
       <img src="./public/images/illustration-sign-up-desktop.svg" alt="illustration sign up desktop"
         class="w-full h-full hidden md:block">
@@ -34,15 +39,29 @@
           <span id="emailError" class="text-red-500 font-bold text-sm"></span>
         </span>
         <input type="email" name="email" id="email" placeholder="email@company.com" required
-          class="font-Roboto w-full p-4 text-Grey border-2 outline-none placeholder:text-Grey focus:border-Dark-Slate-Grey rounded-lg">
-        <button
-          class="bg-Dark-Slate-Grey text-White font-Roboto font-bold w-full rounded-lg p-4 mt-4 hover:bg-gradient-to-r from-30% hover:from-[#c72e59] hover:to-60% hover:to-primary shadow-xl hover:shadow-primary"
-          type="submit">Subscribe to monthly Newsletter</button>
+          class="w-full p-3 rounded-lg outline-none border-2 conform placeholder:text-Grey focus:border-Dark-Slate-Grey focus:text-Dark-Slate-Grey">
+        <button class="primary-btn" type="button">Subscribe to monthly Newsletter</button>
       </form>
     </main>
-  </div>
+  </section>
 
-  <script src="./src/Js/EmailConfig.js"></script>
+  <section id="Success-Message"
+    class="hidden h-screen md:h-fit md:max-w-lg px-4 pt-20 pb-8 md:pt-4 md:pb-4 flex-col justify-between bg-White md:rounded-3xl">
+
+    <div class="wrapper">
+      <img src="./public/images/icon-success.svg" alt="icon success" class="pb-4">
+
+      <h2 class="py-6 text-Dark-Slate-Grey text-5xl font-bold font-Roboto">Thanks for subscribing!</h2>
+
+      <p class="text-Charcoal-Grey font-Roboto text-lg leading-6">A confirmation email has been sent to <span
+          id="userEmail" class="font-bold">teste@email.com</span>. Please open it and click the
+        button inside to confirm your subscription.</p>
+    </div>
+
+    <button type="button" class="primary-btn">Dismiss Message</button>
+  </section>
+
+  <script src="./src/Js/app.js"></script>
 </body>
 
 </html>
