@@ -29,13 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-[Mobile Preview](./public/screenshoots/mobile-preview.jpg)
-[Tablet Preview](./public/screenshoots/tablet-preview.jpg)
-[Desktop Preview](./public/screenshoots/desktop-preview.jpg)
-[Button Hover](./public/screenshoots/btn-2-hover.jpg)
-[Success Mobile](./public/screenshoots/success-mobile.jpg)
-[Success Tablet](./public/screenshoots/success-tablet.jpg)
-[Success Button Hover](./public/screenshoots/btn-hover.jpg)
+![Mobile Preview](./public/screenshoots/mobile-preview.jpg)
+![Tablet Preview](./public/screenshoots/tablet-preview.jpg)
+![Desktop Preview](./public/screenshoots/desktop-preview.jpg)
+![Button Hover](./public/screenshoots/btn-2-hover.jpg)
+![Success Mobile](./public/screenshoots/success-mobile.jpg)
+![Success Tablet](./public/screenshoots/success-tablet.jpg)
+![Success Button Hover](./public/screenshoots/btn-hover.jpg)
 
 ## My process
 
