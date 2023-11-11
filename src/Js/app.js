@@ -3,12 +3,13 @@ const emailError = document.getElementById("emailError");
 const btnSubmitEmail = document.querySelector("form button");
 const successBtn = document.getElementById("Success-Message");
 let errorMessage = "Valid email required";
+let userEmailEl = document.getElementById("userEmail");
 
-btnSubmitEmail.addEventListener("click", (e) => {
-  e.preventDefault();
+btnSubmitEmail.addEventListener("click", () => {
   if (isValidEmail(emailInput.value)) {
     changeInputSituation("not-conform", "conform");
     emailError.textContent = "";
+    userEmailEl.textContent = emailInput.value;
     changeContainer();
   } else {
     changeInputSituation("conform", "not-conform");
@@ -19,6 +20,7 @@ btnSubmitEmail.addEventListener("click", (e) => {
 successBtn.addEventListener("click", () => {
   changeContainer();
   emailInput.value = "";
+  userEmailEl.textContent = "";
 })
 
 
