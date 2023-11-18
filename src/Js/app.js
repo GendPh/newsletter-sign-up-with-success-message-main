@@ -1,7 +1,7 @@
 const emailInput = document.getElementById("email");
 const emailError = document.getElementById("emailError");
 const btnSubmitEmail = document.querySelector("form button");
-const successBtn = document.getElementById("Success-Message");
+const successBtn = document.querySelector("#Success-Message button");
 let errorMessage = "Valid email required";
 let userEmailEl = document.getElementById("userEmail");
 
